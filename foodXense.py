@@ -2,14 +2,13 @@ import streamlit as st
 import requests
 
 def display_food_viewer():
-    # Sidebar input for product name with a unique key
     product_name = st.sidebar.text_input("Enter a food product name:", key="food_product_name_input")
     try:
         if st.sidebar.button("Get Product Data", key="get_product_button"):
-        if product_name:
-            search_and_display_products(product_name)
-        else:
-            st.warning("Please enter a product name before searching.")
+            if product_name:
+                search_and_display_products(product_name)
+            else:
+                st.warning("Please enter a product name before searching.")
     except:
         st.warning("please enter a name before searching")
 
