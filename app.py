@@ -75,4 +75,4 @@ if input_method == "Search for Product":
     display_food_viewer()  
 else:
     if input_method in ["Upload Food Image", "Capture from Camera"]:
-        st.error("Please upload or capture an image to analyze.")
+        st.error("Please upload or capture an image to analyze in the sidebar.")
