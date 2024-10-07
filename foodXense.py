@@ -3,7 +3,7 @@ import requests
 
 def display_food_viewer():
 
-    product_name = st.sidebar.text_input("Enter a food product name:", key="food_product_name_input")
+    product_name = st.sidebar.text_input("Enter a food product name:", key="food_input")
     try:
         if st.sidebar.button("Get Product Data", key="get_product_button"):
             if product_name:
